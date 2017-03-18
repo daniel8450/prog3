@@ -10,14 +10,14 @@ filterr f (x:xs)
   
 multimap :: (a -> [a]) -> [a] -> [[a]]
 multimap _ [] = []
-multimap n (x:xs) (y:ys) =  mapp n x y : multimap (mapp n xs ys)
+multimap n (x:xs) (y:ys) =  n x y : multimap mapp n xs ys
 
 main = do
 let x = [1,2,3]
 let y = [6,7]
 let z = filterr((>2) x)
 let b = mapp((+3) x)
-let m = multimap((+3) x y)
+let m = multimap((map (+3)) x y)
 print z
 print b
 print m
