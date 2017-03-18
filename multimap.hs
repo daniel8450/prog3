@@ -1,15 +1,15 @@
 map :: (a -> a) -> [a] -> [a]
-Main.map _ [] = []
+map _ [] = []
 Main.map n (x:xs) = n x : Main.map n xs
 
 filter :: (a -> Bool) -> [a] -> [a]
-Main.filter _ [] = []
+filter _ [] = []
 Main.filter f (x:xs)
   | f x      = x : (Main.filter f xs)
   | otherwise = Main.filter f xs
   
 multimap :: (a -> [a]) -> [a] -> [[a]]
-Main.multimap _ [] = []
+multimap _ [] = []
 Main.multimap (x:xs) (y:ys) = x y : Main.multimap xs ys
 
 main = do
