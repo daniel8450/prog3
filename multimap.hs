@@ -16,9 +16,9 @@ multimap b (y:ys) =  b y : multimap b ys
 main = do
 let x = [1,2,3]
 let y = [6,7,3]
-let z = filterr (==2) z
+let z = filterr (==2) x
 let b = mapp (+3) y
-let m = multimap z [1,5,6,3]
+let m = multimap b [1,5,6,3]
 
 print z
 print b
