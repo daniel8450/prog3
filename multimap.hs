@@ -18,6 +18,7 @@ let y = [6,7]
 let z = filterr((>2) x)
 let b = mapp((+3) x)
 --let m = multimap((map (+3)) x y)
+print x
 print z
 print b
 --print m
