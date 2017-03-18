@@ -26,7 +26,7 @@ parent(lilly, robin).
 parent(tanner,robin).
 
 sibling(tanner,dan).
-sibling(dan,tanner).
+sibling(lisa,robin).
 sibling(robin,lisa).
 
 sibling(A,B):-parent(P,A),parent(P,B),A\=B.
