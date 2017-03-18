@@ -18,7 +18,7 @@ let x = [1,2,3]
 let y = [6,7,3]
 let z = filterr (==2) x
 let w = mapp (+3) y
-let m = (multimap z [5,6,7])
+let m = (multimap w [5,6,7])
 print x
 print w
 print m
