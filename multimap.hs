@@ -1,23 +1,23 @@
-map :: (a -> a) -> [a] -> [a]
-map _ [] = []
-Main.map n (x:xs) = n x : Main.map n xs
+mapp :: (a -> a) -> [a] -> [a]
+mapp _ [] = []
+mapp n (x:xs) = n x : mapp n xs
 
-filter :: (a -> Bool) -> [a] -> [a]
-filter _ [] = []
-Main.filter f (x:xs)
-  | f x      = x : (Main.filter f xs)
-  | otherwise = Main.filter f xs
+filterr :: (a -> Bool) -> [a] -> [a]
+filterr _ [] = []
+filterr f (x:xs)
+  | f x      = x : (filterr f xs)
+  | otherwise = filterr f xs
   
 multimap :: (a -> [a]) -> [a] -> [[a]]
 multimap _ [] = []
-Main.multimap (x:xs) (y:ys) = x y : Main.multimap xs ys
+multimap (x:xs) (y:ys) = x y : multimap xs ys
 
 main = do
 let x = [1,2,3]
 let y = [6,7]
-let z = Main.filter((>2) x)
-let b = Main.map((+3) x)
-let m = Main.multimap((+3) x y)
+let z = filterr((>2) x)
+let b = mapp((+3) x)
+let m = multimap((+3) x y)
 print z
 print b
 print m
