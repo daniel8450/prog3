@@ -20,7 +20,7 @@ let z = filterr (>1) x
 let w = mapp (+3) y
 let h = filterr (>1)
 let m = multimap (g) y
-      where g = mapp (+2) x
+      where g = mapp (+2)
 print w
 print m
 
