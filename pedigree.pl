@@ -46,6 +46,8 @@ uncle(U,C):-male(U),sibling(U,P),parent(P,C).
 neice(N,G):-female(N),sibling(G,P),parent(P,N).
 nephew(N,G):-male(N),sibling(G,P),parent(P,N).
 
+cousin(C,Z):-parent(P1,C),parent(P2,Z),sibling(P1,P2).
+
 
 
 
