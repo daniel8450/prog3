@@ -25,6 +25,8 @@ parent(barney, nathan).
 parent(lilly, robin).
 parent(tanner,robin).
 
+sibling(tanner,dan).
+sibling(robin,lisa).
 
 sibling(A,B):-parent(P,A),parent(P,B),A\=B.
 
