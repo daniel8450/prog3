@@ -9,7 +9,6 @@ filterr f (x:xs)
   | otherwise = filterr f xs
   
 multimap :: (a -> [a]) -> [a] -> [[a]]
-multimap [] _ = []
 multimap _ [] = []
 multimap b (y:ys) =  b y : multimap b ys
           
@@ -19,7 +18,7 @@ let x = [1,2,3]
 let y = [6,7]
 let z = filterr (==2) x
 let b = mapp (+3) y
-let m = multimap z x
+let m = multimap z [1,5,6]
 
 print z
 print b
