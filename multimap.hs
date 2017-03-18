@@ -21,7 +21,7 @@ let z = filterr (>1) x
 let w = mapp (+3) y
 let u = mapp (+5)
 let o = u  [5,6,7]
-let m = multimap o y
+let m = multimap (o) y
 print w
 print m
 
