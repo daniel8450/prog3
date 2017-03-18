@@ -12,4 +12,13 @@ multimap :: (a -> [a]) -> [a] -> [[a]]
 multimap _ [] = []
 multimap (x:xs) (y:ys) = x y : multimap xs ys
 
-main = do multimap(map [1,2,3], )
+main = do
+let x = [1,2,3]
+let y = [6,7]
+let z = filter((>2) x)
+let b = map((+3) x)
+let m = multimap((+3) x y)
+print z
+print b
+print m
+
