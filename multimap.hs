@@ -9,8 +9,9 @@ filterr f (x:xs)
   | otherwise = filterr f xs
   
 multimap :: (a -> [a]) -> [a] -> [[a]]
+multimap [] _ = []
 multimap _ [] = []
-multimap n (y:ys) =  n y : multimap n ys
+multimap (x:xs) (y:ys) =  x y : multimap xs ys
           
 
 main = do
