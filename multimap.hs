@@ -10,7 +10,7 @@ filterr f (x:xs)
   
 multimap :: (a -> [a]) -> [a] -> [[a]]
 multimap _ [] = []
-multimap (b:bs) (y:ys) =  b y : multimap bs ys
+multimap f (y:ys) =  f y : multimap f ys
           
 
 main = do
