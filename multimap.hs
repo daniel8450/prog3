@@ -20,7 +20,7 @@ let y = [6,7,3]
 let z = filterr (>1) x
 let w = mapp (+3) y
 let u = filterr (>1)
-let m = multimap (u) y
+let m = multimap (u) y x
 print w
 print m
 
