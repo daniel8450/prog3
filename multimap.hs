@@ -18,9 +18,8 @@ let x = [1,2,3]
 let y = [6,7,3]
 let z = filterr (>1) x
 let w = mapp (+3) y
-let h = filterr (>1)
 let m = multimap (g w) y
-      where g = mapp (+2)
+      where g = filterr (>1)
 print w
 print m
 
