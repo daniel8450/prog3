@@ -12,7 +12,7 @@ multimap :: (a -> [a]) -> [a] -> [[a]]
 multimap _ [] = []
 multimap f (x:xs) = f x : multimap f xs ++ [xs]
 
-mM :: [[a]]
+mM :: [a] -> [[a]]
 mM y = multimap (filterr (>2) x) y
     where x = [1,2,3,4,5]
 
@@ -25,5 +25,5 @@ let z = filterr (>1) x
 let w = mapp (+3) y
 print z
 print w
-print mM y
+print (mM y)
 
