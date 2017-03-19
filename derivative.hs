@@ -1,5 +1,5 @@
 dd :: (Float -> Float) -> Float
-dd fx = ((f(x + (.01)))-(f(x - .(01)))) / (.02)
+dd fx = ((f(x + (.01)))-(f(x - (.01)))) / (.02)
 
 
 dx :: (Float -> Float) -> (Float -> Float)
