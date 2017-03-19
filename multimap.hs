@@ -9,7 +9,7 @@ filterr f (x:xs)
   | otherwise = filterr f xs
   
 mM :: a -> [a]
-mM x = mapp x
+mM x = mapp x x
 
 multimapp :: (a -> [a]) -> [a] -> [[a]]
 multimapp _ [] = []
