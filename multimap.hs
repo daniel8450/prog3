@@ -13,7 +13,7 @@ mM x = [x]
 
 multimapp :: (a -> [a]) -> [a] -> [[a]]
 multimapp _ [] = []
-multimapp n (x:xs) = mapp n x : multimapp (mapp n xs) xs
+multimapp n (x:xs) = mapp n x : (multimapp (mapp n xs) xs)
 --multimapp f (x:xs) = f x : multimapp f xs
 
 
@@ -22,7 +22,7 @@ let x = [1,2,3]
 let y = [6,7,3]
 --let z = filterr (>1) x
 let w = mapp (+3) y
-let m = multimapp (mapp (+3) x) y
+let m = (multimapp (mapp (+3) x) y)
 --print z
 --print w
 print m
