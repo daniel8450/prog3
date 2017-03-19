@@ -22,11 +22,11 @@ let z = filterr (>1) x
 let w = mapp (+3) y
 let m = multimapp mM x
 
-putStrLn "z = filterr (>1) [1,2,3]:"
+putStrLn "filterr (>1) [1,2,3]:"
 print z
-putStrLn "w = mapp (+3) [6,7,3]:"
+putStrLn "mapp (+3) [6,7,3]:"
 print w
-putStrLn "m = multimapp mM [1,2,3]:"
+putStrLn "multimapp mM [1,2,3]:"
 print m
 
 
