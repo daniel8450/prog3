@@ -2,7 +2,7 @@
 
 echo
 echo "///pedigree///"
-echo prolog
+echo $prolog
 echo consult('pedigree.pl').
 echo father(X,mary).
 echo ;
