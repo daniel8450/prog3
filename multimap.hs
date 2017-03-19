@@ -13,8 +13,7 @@ mM x = [x]
 
 multimapp :: (a -> [a]) -> [a] -> [[a]]
 multimapp _ [] = []
-multimapp n x = map (map (n)) x
---multimapp f (x:xs) = f x : multimapp f xs
+multimapp f (x:xs) = f x : multimapp f xs
 
 
 main = do
