@@ -9,7 +9,7 @@ dx n = if (n `mod` 1 == 0) then dx 0
 main = do
 let m = dx 3
 print m
-let w = dx 3x
+let w = dx 3*x
 print w
 
        
