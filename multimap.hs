@@ -9,7 +9,7 @@ filterr f (x:xs)
   | otherwise = filterr f xs
   
 mM :: a -> [a]
-mM x = [x]
+mM x = x
 
 multimapp :: (a -> [a]) -> [a] -> [[a]]
 multimapp _ [] = []
@@ -21,7 +21,7 @@ let x = [1,2,3]
 let y = [6,7,3]
 --let z = filterr (>1) x
 --let w = mapp (+3) y
-let m = multimapp (filterr (>3) y)
+let m = multimapp mM x
 --print z
 --print w
 print m
