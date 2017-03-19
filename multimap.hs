@@ -10,7 +10,7 @@ filterr f (x:xs)
   
 multimap :: (a -> [a]) -> [a] -> [[a]]
 multimap _ [] = []
-multimap f (x:xs) = f x : multimap f xs
+multimap f (x:xs) = mapp f x : mapp f xs
 
 mM :: [a] -> [[a]]
 mM y = multimap (filterr odd) y
