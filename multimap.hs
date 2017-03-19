@@ -20,5 +20,5 @@ let y = [6,7,3]
 let z = filterr (>1) x
 let w = mapp (+3) y
 print w
-print (multimap((mapp (+5) x) x))
+print (multimap(mapp (+5) x))
 
