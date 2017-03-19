@@ -13,8 +13,8 @@ mM x = [x]
 
 multimapp :: (a -> [a]) -> [a] -> [[a]]
 multimapp _ [] = []
-multimapp f (x:xs) = f x : multimapp f xs
-
+multimapp f x = f x
+--multimapp f (x:xs) = f x : multimapp f xs
 
 main = do
 let x = [1,2,3]
