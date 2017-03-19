@@ -22,7 +22,7 @@ let z = filterr (>1) x
 let w = mapp (+3) y
 let m = multimapp mM x
 let i = [1,1,1]
-let u = [+3,+4,+5]
+let u = [(+3),(+4),(+5)]
 
 putStrLn "z = filterr (>1) [1,2,3]:"
 print z
