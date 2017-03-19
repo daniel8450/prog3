@@ -12,15 +12,14 @@ multimap :: (a -> [a]) -> [a] -> [[a]]
 multimap _ [] = []
 multimap f (x:xs) = mapp f x : mapp f xs
 
-mM :: [a] -> [[a]]
-mM y = multimap (filterr odd) y
 
 main = do
 let x = [1,2,3]
 let y = [6,7,3]
 let z = filterr (>1) x
 let w = mapp (+3) y
+let m = multimap (filterr odd) y
 print z
 print w
-print (mM y)
+print m
 
