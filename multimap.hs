@@ -22,7 +22,7 @@ let x = [1,2,3]
 let y = [6,7,3]
 --let z = filterr (>1) x
 let w = mapp (+3) y
-let m = multimapp (mapp (+3) y) x
+let m = multimapp mM x
 --print z
 --print w
 print m
