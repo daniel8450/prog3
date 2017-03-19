@@ -13,7 +13,6 @@ mM x = [x]
 
 multimapp :: (a -> [a]) -> [a] -> [[a]]
 multimapp _ [] = []
-multimapp _ [x] = x
 multimapp n (x:xs) = n x : multimapp n xs
 --multimapp f (x:xs) = f x : multimapp f xs
 
