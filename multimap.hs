@@ -21,9 +21,6 @@ let y = [6,7,3]
 let z = filterr (>1) x
 let w = mapp (+3) y
 let m = multimapp mM x
-let i = [1,1,1]
-let u = [(+3),(+4),(+5)]
-let q = multimapp (u) i
 
 putStrLn "z = filterr (>1) [1,2,3]:"
 print z
@@ -31,5 +28,5 @@ putStrLn "w = mapp (+3) [6,7,3]:"
 print w
 putStrLn "m = multimapp mM [1,2,3]:"
 print m
-print q
+
 
