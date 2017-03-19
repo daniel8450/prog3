@@ -10,7 +10,7 @@ filterr f (x:xs)
   
 multimapp :: (a -> [a]) -> [a] -> [[a]]
 multimapp _ [] = []
-multimapp f (x:xs) = mapp f x : multimap (mapp f) xs
+multimapp f (x:xs) = f x : multimap f xs
 
 
 main = do
