@@ -1,17 +1,11 @@
 #!/bin/bash
 
+echo  
+echo "///                                 pedigree                                            ///"
+echo "///to test use ->    father(X,mary).   grandma(X,mary).   aunt(X,mary).   neice(X,dan).///"
 echo
-echo "///pedigree///"
 prolog
-consult('pedigree.pl').
-father(X,mary).
-;
-grandma(X,mary).
-;
-aunt(X,mary).
-;
-neice(X,dan).
-;
+echo ouch
 
 echo
 echo "///multimap///"
