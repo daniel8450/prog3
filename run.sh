@@ -2,7 +2,7 @@
 
 echo
 echo "///multimap///"
-./multimap.hs
+./multimap
 
 echo  
 echo "///pedigree///"
