@@ -26,5 +26,4 @@ let m = multimapp (mapp (+3) y)
 --print z
 --print w
 print m
-print z
 
